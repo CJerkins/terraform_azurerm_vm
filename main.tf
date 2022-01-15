@@ -15,24 +15,24 @@ terraform {
 
 # Randoms
 
-resource "random_password" "password" {
-  length      = 32
-  min_lower   = 1
-  min_upper   = 1
-  min_numeric = 1
-  min_special = 1
-  special     = true
-}
+# resource "random_password" "password" {
+#   length      = 32
+#   min_lower   = 1
+#   min_upper   = 1
+#   min_numeric = 1
+#   min_special = 1
+#   special     = true
+# }
 
 resource "random_integer" "count" {
   min = 01
   max = 99
 }
 
-resource "tls_private_key" "automation_account" {
-  algorithm = "RSA"
-  rsa_bits  = 4096
-}
+# resource "tls_private_key" "automation_account" {
+#   algorithm = "RSA"
+#   rsa_bits  = 4096
+# }
 
 # Variables
 // locals {
